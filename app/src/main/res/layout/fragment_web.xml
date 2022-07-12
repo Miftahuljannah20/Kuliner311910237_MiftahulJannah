@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:barrierAllowsGoneWidgets="true"
+    android:background="#FFFF"
+    tools:context=".WebFragment">
+
+    <FrameLayout
+        android:id="@+id/fl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_header"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_top"
+            android:adjustViewBounds="true"
+            android:layout_height="wrap_content"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/culinerlogo"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cita Rasa yang Bikin Kamu Nyaman"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:background="#223F51B5"
+            android:padding="5dp" />
+    </FrameLayout>
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fl_header" />
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_call"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="110dp"-->
+<!--        android:layout_marginEnd="110dp"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginBottom="80dp"-->
+<!--        android:height="10dp"-->
+<!--        android:background="@drawable/background_btn"-->
+<!--        android:clickable="true"-->
+<!--        android:text="Hubungi Kami"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textStyle="bold" />-->
+
+
+</RelativeLayout>
